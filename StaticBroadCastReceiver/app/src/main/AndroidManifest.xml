@@ -17,9 +17,9 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".MyBroadCastReceiver">
+        <receiver android:name=".MyBroadCastReceiver" android:exported="true">
             <intent-filter>
-                <action android:name="com.example.limky.broadcastreceiver.gogo"></action>
+                <action android:name="button_click"></action>
             </intent-filter>
         </receiver>
     </application>

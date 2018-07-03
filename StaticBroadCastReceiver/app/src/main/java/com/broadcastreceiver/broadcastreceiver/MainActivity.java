@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button.OnClickListener mClickListener = new View.OnClickListener() {
         public void onClick(View v) {
-            sendBroadcast(new Intent("com.example.limky.broadcastreceiver.gogo"));
+            sendBroadcast(new Intent("button_click"));
         }
     };
 }
