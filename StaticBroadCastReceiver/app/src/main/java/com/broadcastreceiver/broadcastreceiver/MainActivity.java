@@ -20,9 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     Button.OnClickListener mClickListener = new View.OnClickListener() {
         public void onClick(View v) {
+<<<<<<< HEAD
             Intent intent = new Intent("StaticBroadCast!!");
             intent.putExtra("value", "Confirm");
             sendBroadcast(intent);
+=======
+            sendBroadcast(new Intent("button_click"));
+>>>>>>> 4a8aa23ace29daaa1e9b2100f3d372c340785226
         }
     };
 }
