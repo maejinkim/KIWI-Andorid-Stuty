@@ -8,6 +8,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -45,6 +46,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_start.setOnClickListener(this);
         btn_stop.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Count","MainActivity 소멸됨");
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("Count","MainActivity 중지됨");
     }
 
     @Override
