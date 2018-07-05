@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jul 03 16:51:09 KST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\Source\\KIWI_Study\\TestContentProviderDataB\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

@@ -19,7 +19,11 @@
 
         <receiver android:name=".MyBroadCastReceiver" android:exported="true">
             <intent-filter>
+<<<<<<< HEAD
+                <action android:name="StaticBroadCast!!"></action>
+=======
                 <action android:name="button_click"></action>
+>>>>>>> 4a8aa23ace29daaa1e9b2100f3d372c340785226
             </intent-filter>
         </receiver>
     </application>

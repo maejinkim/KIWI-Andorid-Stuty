@@ -8,8 +8,9 @@ import android.widget.Toast;
 public class MyBroadCastReceiver extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
-        String actionName = intent.getAction();
-        Toast.makeText(context, "받은 액션 : "+actionName , Toast.LENGTH_SHORT).show();
+        String actionName = intent.getStringExtra("value");
+        Toast.makeText(context, "받은 액션 : "+actionName ,
+                Toast.LENGTH_SHORT).show();
 
     }
 }

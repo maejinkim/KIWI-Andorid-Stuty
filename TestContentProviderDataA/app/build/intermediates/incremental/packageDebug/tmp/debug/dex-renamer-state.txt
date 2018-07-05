@@ -1,0 +1,4 @@
+#Tue Jul 03 16:54:51 KST 2018
+base.0=D\:\\Source\\KIWI_Study\\TestContentProviderDataA\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
