@@ -19,7 +19,7 @@
 
         <receiver android:name=".MyBroadCastReceiver">
             <intent-filter>
-                <action android:name="com.example.limky.broadcastreceiver.gogo"></action>
+                <action android:name="StaticBroadCast!!"></action>
             </intent-filter>
         </receiver>
     </application>
