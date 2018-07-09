@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Source\KIWI_Study\SensorList\app\src\main\assets"/><source path="D:\Source\KIWI_Study\SensorList\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\Source\KIWI_Study\SensorList\app\src\debug\assets"/></dataSet></merger>
