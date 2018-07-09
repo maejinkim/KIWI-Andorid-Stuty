@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        text.setText("돌아왔다!");
         mSensorManager.requestTriggerSensor(mTriggerEventListener, mSensor);
     }
 
@@ -57,9 +58,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onTrigger(TriggerEvent event) {
 
-                Toast.makeText(MainActivity.this, "Motion 감지!",Toast.LENGTH_SHORT).show();
-                text.setText("모션 감지");
+                Toast.makeText(MainActivity.this, "모션감지",Toast.LENGTH_SHORT).show();
+                //text.setText(event.values.toString());
+                text.setText("getName : "+event.sensor.getName()+"\n"+"getVendor : "+event.sensor.getVendor()+"\n"
+                                + "getMaximumRange : "+ event.sensor.getMaximumRange());
                 Log.d("Motion","detect");
+            mSensorManager.requestTriggerSensor(mTriggerEventListener, mSensor);
 
         }
     }

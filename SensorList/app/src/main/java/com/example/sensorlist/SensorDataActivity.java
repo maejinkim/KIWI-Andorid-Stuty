@@ -96,7 +96,8 @@ public class SensorDataActivity extends Activity implements SensorEventListener 
           String data = "Sensor Timestamp:" + event.timestamp +"\n\n";
           //센서의 값은 event.values 하게되면 float 배열로 리턴해줍니다.
           for(int i=0; i<event.values.length; i++){
-               data += ("Sensor Value #" + (i+1) + ":" + event.values[i] + "\n"); 
+               float value = Float.parseFloat(String.format("%.2f",event.values[i]));
+               data += ("Sensor Value #" + (i+1) + ":" + value + "\n");
           }
           //텍스트 뷰에 data를 출력
           txtSensorValues.setText(data);
